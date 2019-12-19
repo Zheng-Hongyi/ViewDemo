@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UITextField *againPswdTextField;
 @property (nonatomic, strong) UIButton *registButton;
 
+@property (nonatomic, copy) void (^registCallBack)(NSString *, NSString *, NSString *);
+
 @end
 
 NS_ASSUME_NONNULL_END

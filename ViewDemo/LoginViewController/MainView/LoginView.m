@@ -10,5 +10,9 @@
 
 @implementation LoginView
 
-
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    NSLog(@"%s", __func__);
+    // TODO: 操作一些样式相关、状态相关的
+}
 @end

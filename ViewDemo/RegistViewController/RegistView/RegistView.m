@@ -52,6 +52,14 @@
     }];
 }
 
+#pragma mark - Action
+
+- (void)registAction {
+    if (self.registCallBack) {
+        self.registCallBack(self.userNameTextField.text, self.userPswdTextField.text, self.againPswdTextField.text);
+    }
+}
+
 #pragma mark - Get
 
 - (UITextField *)userNameTextField {
@@ -87,6 +95,7 @@
     if (!_registButton) {
         _registButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [_registButton setTitle:@"注册" forState:UIControlStateNormal];
+        [_registButton addTarget:self action:@selector(registAction) forControlEvents:UIControlEventTouchUpInside];
         
     }
     return _registButton;

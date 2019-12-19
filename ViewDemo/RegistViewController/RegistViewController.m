@@ -25,9 +25,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self configViews];
 }
 
+- (void)dealloc {
+    NSLog(@"%s", __func__);
+}
 
+#pragma mark -
+
+- (void)configViews {
+    __weak typeof(self) weakSelf = self;
+    self.mainView.registCallBack = ^(NSString * _Nonnull userName, NSString * _Nonnull userPswd, NSString * _Nonnull userAgainPswd) {
+        if (nil != weakSelf) {
+            
+        }
+        NSLog(@"%@ %@ %@", userName, userPswd, userAgainPswd);
+    };
+}
 
 
 @end

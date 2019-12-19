@@ -26,6 +26,12 @@
 #pragma mark - Action
 
 - (IBAction)loginAction:(id)sender {
+    NSString *userName = self.mainView.userNameTextField.text;
+    NSString *userPswd = self.mainView.userPswdTextField.text;
+    
+    NSLog(@"%@ %@", userName, userPswd);
+    
+    // TODO: 处理登录的逻辑
 }
 
 - (IBAction)registAction:(id)sender {
