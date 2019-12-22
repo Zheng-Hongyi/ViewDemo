@@ -35,6 +35,7 @@
 #pragma mark -
 
 - (void)configViews {
+    self.title = @"注册";
     __weak typeof(self) weakSelf = self;
     self.mainView.registCallBack = ^(NSString * _Nonnull userName, NSString * _Nonnull userPswd, NSString * _Nonnull userAgainPswd) {
         if (nil != weakSelf) {
