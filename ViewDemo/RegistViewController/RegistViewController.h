@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "RegisterPresenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RegistViewController : UIViewController
+@interface RegistViewController : BaseViewController <RegisterPresenter *>
 
 @end
 

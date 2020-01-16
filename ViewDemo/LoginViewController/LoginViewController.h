@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "LoginViewPresenter.h"
 
-@interface LoginViewController : UIViewController
-
+@interface LoginViewController : BaseViewController<LoginViewPresenter *>
 
 @end
 

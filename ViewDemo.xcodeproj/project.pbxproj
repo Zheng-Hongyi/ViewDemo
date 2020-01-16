@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C8FB9D426A919F1098C5C84 /* Pods_ViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8EF632DD5FA2DEB7FA42AA /* Pods_ViewDemo.framework */; };
+		193E2E8C23CC7326004E2859 /* LoginViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E2E8B23CC7326004E2859 /* LoginViewPresenter.m */; };
 		194D482223AB427000BB4578 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 194D482123AB427000BB4578 /* RegistViewController.m */; };
 		194D482623AB428E00BB4578 /* RegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 194D482523AB428E00BB4578 /* RegistView.m */; };
 		1980DCF423A9D1A2003DF127 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1980DCF323A9D1A2003DF127 /* AppDelegate.m */; };
@@ -18,10 +19,16 @@
 		1980DD0223A9D1A5003DF127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1980DD0023A9D1A5003DF127 /* LaunchScreen.storyboard */; };
 		1980DD0523A9D1A5003DF127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1980DD0423A9D1A5003DF127 /* main.m */; };
 		1980DD0F23A9D1F8003DF127 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1980DD0E23A9D1F8003DF127 /* LoginView.m */; };
+		19A4DBDE23C481BC005D5AB7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A4DBDD23C481BC005D5AB7 /* BaseViewController.m */; };
+		19A4DBE123C481D7005D5AB7 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A4DBE023C481D7005D5AB7 /* BasePresenter.m */; };
+		19DF14DD23D03B5C000CA141 /* RegisterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF14DC23D03B5C000CA141 /* RegisterPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09ADBC6A1B90B36E2DD5636C /* Pods-ViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDemo.release.xcconfig"; path = "Target Support Files/Pods-ViewDemo/Pods-ViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		193E2E8A23CC7326004E2859 /* LoginViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewPresenter.h; sourceTree = "<group>"; };
+		193E2E8B23CC7326004E2859 /* LoginViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewPresenter.m; sourceTree = "<group>"; };
+		193E2E8D23CC7AFF004E2859 /* LoginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginProtocol.h; sourceTree = "<group>"; };
 		194D482023AB427000BB4578 /* RegistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
 		194D482123AB427000BB4578 /* RegistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		194D482423AB428E00BB4578 /* RegistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistView.h; sourceTree = "<group>"; };
@@ -40,6 +47,12 @@
 		1980DD0423A9D1A5003DF127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1980DD0D23A9D1F8003DF127 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		1980DD0E23A9D1F8003DF127 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		19A4DBDC23C481BC005D5AB7 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		19A4DBDD23C481BC005D5AB7 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		19A4DBDF23C481D7005D5AB7 /* BasePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePresenter.h; sourceTree = "<group>"; };
+		19A4DBE023C481D7005D5AB7 /* BasePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePresenter.m; sourceTree = "<group>"; };
+		19DF14DB23D03B5C000CA141 /* RegisterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterPresenter.h; sourceTree = "<group>"; };
+		19DF14DC23D03B5C000CA141 /* RegisterPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterPresenter.m; sourceTree = "<group>"; };
 		6B8EF632DD5FA2DEB7FA42AA /* Pods_ViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF352DEA62E3082B5675C8B4 /* Pods-ViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-ViewDemo/Pods-ViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,9 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		193E2E8923CC7309004E2859 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				193E2E8A23CC7326004E2859 /* LoginViewPresenter.h */,
+				193E2E8B23CC7326004E2859 /* LoginViewPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		194D481F23AB424600BB4578 /* RegistViewController */ = {
 			isa = PBXGroup;
 			children = (
+				19DF14DA23D03B38000CA141 /* Presenter */,
 				194D482323AB427800BB4578 /* RegistView */,
 				194D482023AB427000BB4578 /* RegistViewController.h */,
 				194D482123AB427000BB4578 /* RegistViewController.m */,
@@ -96,6 +119,7 @@
 		1980DCF123A9D1A2003DF127 /* ViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				19A4DBDB23C481A5005D5AB7 /* Base */,
 				194D481F23AB424600BB4578 /* RegistViewController */,
 				1980DD0B23A9D1C8003DF127 /* LoginViewController */,
 				1980DCF223A9D1A2003DF127 /* AppDelegate.h */,
@@ -114,9 +138,11 @@
 		1980DD0B23A9D1C8003DF127 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
+				193E2E8923CC7309004E2859 /* Presenter */,
 				1980DD0C23A9D1D7003DF127 /* MainView */,
 				1980DCF823A9D1A2003DF127 /* LoginViewController.h */,
 				1980DCF923A9D1A2003DF127 /* LoginViewController.m */,
+				193E2E8D23CC7AFF004E2859 /* LoginProtocol.h */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -130,13 +156,32 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
+		19A4DBDB23C481A5005D5AB7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				19A4DBDC23C481BC005D5AB7 /* BaseViewController.h */,
+				19A4DBDD23C481BC005D5AB7 /* BaseViewController.m */,
+				19A4DBDF23C481D7005D5AB7 /* BasePresenter.h */,
+				19A4DBE023C481D7005D5AB7 /* BasePresenter.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		19DF14DA23D03B38000CA141 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				19DF14DB23D03B5C000CA141 /* RegisterPresenter.h */,
+				19DF14DC23D03B5C000CA141 /* RegisterPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		63C3A84C5BC9C54EE8394F04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DF352DEA62E3082B5675C8B4 /* Pods-ViewDemo.debug.xcconfig */,
 				09ADBC6A1B90B36E2DD5636C /* Pods-ViewDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -263,6 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1980DD0F23A9D1F8003DF127 /* LoginView.m in Sources */,
+				193E2E8C23CC7326004E2859 /* LoginViewPresenter.m in Sources */,
+				19A4DBDE23C481BC005D5AB7 /* BaseViewController.m in Sources */,
+				19DF14DD23D03B5C000CA141 /* RegisterPresenter.m in Sources */,
+				19A4DBE123C481D7005D5AB7 /* BasePresenter.m in Sources */,
 				1980DCFA23A9D1A2003DF127 /* LoginViewController.m in Sources */,
 				194D482223AB427000BB4578 /* RegistViewController.m in Sources */,
 				194D482623AB428E00BB4578 /* RegistView.m in Sources */,
@@ -412,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T366LQLPX;
 				INFOPLIST_FILE = ViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T366LQLPX;
 				INFOPLIST_FILE = ViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
